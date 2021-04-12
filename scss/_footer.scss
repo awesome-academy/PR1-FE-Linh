@@ -1,0 +1,36 @@
+.footer {
+  .card-title {
+    margin-bottom: 1rem;
+  }
+  .card-body {
+    h4 {
+      letter-spacing: 0.2rem;
+      font-weight: 550;
+      font-size: 1.8rem;
+    }
+
+    .send-email {
+      input[type='text'] {
+        width: 200px;
+        height: 20px;
+        padding-right: 50px;
+      }
+
+      input[type='submit'] {
+        margin-left: -50px;
+        height: 25px;
+        width: 50px;
+        background: black;
+        color: white;
+        border: 0;
+        -webkit-appearance: none;
+      }
+    }
+  }
+
+  .footer__lien-he {
+    i {
+      margin-top: 0.5rem;
+    }
+  }
+}
