@@ -1,0 +1,24 @@
+.donhang-page {
+  width: $content-width;
+  margin: auto;
+}
+
+.ds-donhang__container {
+  padding: 0 3rem;
+  margin: 0 auto;
+  overflow: auto;
+}
+.DS-table {
+  margin-right: 1rem;
+}
+.DS__business-badge {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .badge-holder {
+    width: 33.33%;
+    img {
+      width: 100%;
+    }
+  }
+}

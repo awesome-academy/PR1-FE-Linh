@@ -1,0 +1,24 @@
+mixin renderHeaderContent(...contents)
+  each content in contents 
+    li=content
+
+header.header
+  section.customer-info
+    ul.d-flex.flex-row.justify-content-lg-start
+      +renderHeaderContent("Tài khoản của tôi", "-","Tài khoản của tôi", "-",
+      "Trạng thái đơn hàng", "-",
+      "Danh sách ưa thích", "-",
+      "Giỏ hàng", "-",
+      "Đăng nhập", "-",
+      "Đăng kí", "-")
+    .search
+      input.border-0(type='text' placeholder='Tìm kiếm ở đây...')
+      button.border-0
+        i.fas.fa-search.border-0
+  section.web-header
+    .img-container
+      img(src='../assets/images/project-1_logo.jpg' alt='')
+    ul
+      +renderHeaderContent("TRANG CHỦ", "RỰOU VANG ĐỎ","RỰOU TRẮNG", "CHAMPAGNE",
+      "THÔNG TIN", "BLOG",
+      "LIÊN HỆ")
