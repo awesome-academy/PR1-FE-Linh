@@ -13,6 +13,8 @@
   margin-right: 1rem;
 }
 .DS__business-badge {
+  max-width: $content-width;
+  margin:auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
