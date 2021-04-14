@@ -1,0 +1,10 @@
+include ../../commons/product.pug
+mixin inDemandProduct
+  each s in [11,12,13,14]
+    +renderProduct(s)
+.new-product.my-5.pb-5
+  header S&#x1EA2;N PH&#x1EA8;M B&Aacute;N CH&#x1EA0;Y
+  div
+    img(src='../assets/images/title-dark.png' alt='')
+  .products
+    +inDemandProduct()

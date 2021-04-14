@@ -15,10 +15,4 @@ header.header
       input.border-0(type='text' placeholder='Tìm kiếm ở đây...')
       button.border-0
         i.fas.fa-search.border-0
-  section.web-header
-    .img-container
-      img(src='../assets/images/project-1_logo.jpg' alt='')
-    ul
-      +renderHeaderContent("TRANG CHỦ", "RỰOU VANG ĐỎ","RỰOU TRẮNG", "CHAMPAGNE",
-      "THÔNG TIN", "BLOG",
-      "LIÊN HỆ")
+  include ./nav.pug

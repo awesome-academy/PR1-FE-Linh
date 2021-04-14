@@ -73,6 +73,7 @@
     h1 {
       font-family: 'utm_caviar', Arial, Helvetica, sans-serif;
       color: $color-font-utm;
+      padding:.5rem 1rem;
     }
 
     td {
@@ -99,61 +100,6 @@
   flex-direction: row;
   justify-content: space-around;
   margin: 3rem 0;
-}
-.product {
-  width: 20%;
-
-  .triangle {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 5rem 5rem 0 0;
-    border-color: $color-font-utm transparent transparent transparent;
-    position: relative;
-    margin-bottom: -5rem;
-    p {
-      width: 9rem;
-      text-align: center;
-      color: $color-white;
-      border-bottom: 1px solid $color-font-utm;
-      padding: 1rem;
-      padding-bottom: 0.5rem;
-      margin-top: -5.2rem;
-      margin-left: -3rem;
-      transform: rotate(-45deg);
-      font-size: 1.6rem;
-    }
-  }
-
-  .product-img__container {
-    width: 100%;
-    img {
-      width: 100%;
-    }
-  }
-
-  .price-detail {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .product-price {
-      p {
-        font-family: 'utm_caviar', Arial, Helvetica, sans-serif;
-        display: inline;
-      }
-      .actual-price {
-        font-size: 2.3rem;
-        color: $color-font-utm;
-      }
-
-      .sale-price {
-        font-size: 1.5rem;
-        text-decoration: line-through;
-      }
-    }
-  }
 }
 
 .gallery {
@@ -217,14 +163,14 @@
     margin: 0 1rem;
   }
   .card-img-container {
-    width: 40rem;
+    width: 30rem;
     img {
       width: 100%;
     }
   }
 
   .card-body {
-    width: 40rem;
+    width: 30rem;
     .card-title {
       font-size: 1.8rem;
     }

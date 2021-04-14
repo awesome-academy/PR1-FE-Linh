@@ -1,0 +1,34 @@
+mixin renderHeaderContent(...contents)
+  each content in contents 
+    li
+      a(href='')=content
+
+mixin renderDropdownContent(content)
+  tr
+    each i in [1,2,3]
+      td
+        a(href='')=content
+
+section.web-header
+  .img-container
+    img(src='../assets/images/project-1_logo.jpg' alt='')
+  ul
+    +renderHeaderContent("TRANG CHỦ")
+    li
+      .dropdown
+          a.dropbtn R&#x1AF;&#x1EE2;U VANG &Dstrok;&#x1ECE;
+            .dropdown-content
+              table.table.table-borderless
+                thead
+                    tr
+                      th(scope='col') R&#x1AF;&#x1EE2;U NGO&#x1EA0;I
+                      th(scope='col') R&#x1AF;&#x1EE2;U VANG
+                      th(scope='col') R&#x1AF;&#x1EE2;U NGO&#x1EA0;I
+                tbody
+                  each content in ["Rượu Chivas","Hàng độc - Rượu độc đáo","Johnnie Walker","Rượu Whiskey","Rượu Remy Martin","Rượu Glenmorangie"]
+                    +renderDropdownContent(content)
+              .img-container
+                img(src='../assets/images/Home-gallery/3.jpg' alt='')
+    +renderHeaderContent("RỰOU TRẮNG", "CHAMPAGNE",
+    "THÔNG TIN", "BLOG",
+    "LIÊN HỆ")

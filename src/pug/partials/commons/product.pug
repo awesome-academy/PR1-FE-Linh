@@ -1,0 +1,25 @@
+mixin renderProduct(s)
+  article.product
+    section
+      .triangle
+        p Sale
+      .product-img__container
+        img(src=`../../../assets/images/Product/${s}.jpg` alt='')
+      .product-fav-comp
+        span.produc-fav
+          span
+            i.fas.fa-heart
+          span Y&ecirc;u th&iacute;ch
+        span.produc-fav
+          span
+            i.far.fa-chart-bar
+          span So s&aacute;nh
+        span
+          i.fas.fa-compress-alt
+    section.price-detail
+      h3 R&#x1AF;&#x1EE2;U VANG &Dstrok;&Agrave; L&#x1EA0;T
+      .product-price
+        p.actual-price 370.000d
+        p -
+        p.sale-price 450.000d
+      button.add-to-cart.btn-lg.btn-dark.w-75.my-2 ADD TO CART

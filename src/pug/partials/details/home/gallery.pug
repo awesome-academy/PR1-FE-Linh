@@ -1,0 +1,12 @@
+mixin rendergallery
+  each s in [3,2,5,6,7,8]
+    .img-container
+      img(src=`../assets/images/Home-gallery/${s}.jpg` alt='')
+
+article.gallery.my-5.pb-5
+  .img-container
+    img(src='../assets/images/Home-gallery/1.jpg' alt='')
+  .img-bg
+    p 1987
+    h1 R&#x1AF;&#x1EE2;U
+  +rendergallery()
