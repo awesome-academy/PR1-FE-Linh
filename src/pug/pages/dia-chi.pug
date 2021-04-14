@@ -1,0 +1,7 @@
+extends ../layouts/default-layout.pug
+block content
+    main.address-page
+        include ../partials/commons/route.pug
+        +renderRoute(" Địa Chỉ", "ĐỊA CHỈ")
+        include ../partials/details/dia-chi/unfilled-form.pug
+        include ../partials/details/dia-chi/filled-form.pug

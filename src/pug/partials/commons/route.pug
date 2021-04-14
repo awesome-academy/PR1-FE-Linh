@@ -1,0 +1,11 @@
+mixin renderTitle(title)
+    if title
+        h1=title
+        img(src='../../assets/images/titleleft-dark.png' alt='')
+    //- '../assets/images/titleleft-dark.png'
+mixin renderRoute(route,title='')
+    section
+        .route.my-4
+            span Trang ch&#x1EE7; /
+            span=route
+        +renderTitle(title)
