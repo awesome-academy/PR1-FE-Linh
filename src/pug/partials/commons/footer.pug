@@ -1,0 +1,68 @@
+mixin renderListLink(listClasses, linkClasses,...contents)
+  ul.list-group.border-0
+    each content in contents 
+      li(class=listClasses)
+        a(class=linkClasses)=content
+
+mixin renderListIcon(ulClass, liClass, ...iconClasses)
+  ul(class=ulClass)
+    each iconClass in iconClasses 
+      li(class=liClass)
+        a(href='')
+          i(class=iconClass)
+
+
+footer.footer
+  article.footer__content.d-flex.justify-content-lg-between.border-bottom
+    .card.border-0
+      .card-body
+        h4.card-title TH&Ocirc;NG TIN
+        +renderListLink(["list-group-item", "border-0","px-0"], ["fs-5"], "VỀ CHÚNG TÔI", "GIAO HÀNG", "CẢM NGHĨ", "LƯU TRỮ", "CHÍNH SÁCH RIÊNG TƯ")
+    .card.border-0
+      .card-body
+        h4.card-title MUA H&Agrave;NG
+        +renderListLink(["list-group-item", "border-0","px-0"], ["fs-5"], "VẬN CHUYỂN VÀ TRẢ HÀNG", "MUA HÀNG AN TOÀN", "VẬN QUỐC TẾ", "LIÊN KẾT", "DỊCH VỤ GIẢM GIÁ")
+    .card.border-0
+      .card-body
+        h4.card-title G&#x1EEC;I EMAIL
+        ul.list-group.border-0
+          li.list-group-item.border-0.px-0
+            a.fs-5(href='') G&#x1EED;i email cho ch&uacute;ng t&ocirc;i &dstrok;&#x1EC3; &dstrok;&#x1B0;&#x1EE3;c h&#x1ED7; tr&#x1EE3;
+          li.send-email.list-group-item.border-0.px-0
+            input(type='text')
+            input(type='submit')
+          li.list-group-item.border-0.px-0
+            +renderListIcon(["list-inline","border-0","d-inline"], ["list-inline-item","border-0","px-0"],["fab","fa-instagram","fa-2x"],["fab","fa-tiktok","fa-2x"],["fab","fa-youtube","fa-2x"],["fab","fa-twitter","fa-2x"],["fab","fa-facebook-f","fa-2x"])
+    .footer__lien-he.card.border-0
+      .card-body
+        h4.card-title LI&Ecirc;N H&#x1EC6;
+        ul.list-group.border-0
+          li.list-group-item.border-0.px-0
+            section.d-flex.flex-row
+              i.fas.fa-map-marker-alt
+              div
+                p.mx-2
+                  | T&#x1EA7;ng 4, To&agrave; nh&agrave; Hanoi Group S&#x1ED1; 442 &Dstrok;&#x1ED9;i C&#x1EA5;n
+                p.mx-2 P. C&#x1ED1;ng V&#x1ECB; Q. Ba &Dstrok;&igrave;nh, H&agrave; N&#x1ED9;i
+          li.list-group-item.border-0.px-0
+            .d-flex.flex-row
+              section.d-flex.flex-row
+                i.fas.fa-blender-phone
+                p.mx-2 (04) 3786 8904
+              section.d-flex.flex-row
+                i.fas.fa-blender-phone
+                p.mx-2 (04) 3786 8904
+          li.list-group-item.border-0.px-0
+            .d-flex.flex-row
+              section.d-flex.flex-row
+                i.fas.fa-blender-phone
+                p.mx-2 (04) 3786 8904
+              section.d-flex.flex-row
+                i.fas.fa-envelope
+                p.mx-2.text-warning
+                  em Support@bitzweb.vn
+  article.footer__copy-right.d-flex.flex-row.justify-content-between.p-3
+    p © Copyright 2008-2014 DKT Technology JSC
+    +renderListIcon(["list-inline","border-0","d-inline"], ["list-inline-item","border-0"],
+    ["fab","fa-cc-mastercard","fa-3x","mx-3"],["fab","fa-cc-visa","fa-3x", "mx-3"],["fab","fab", "fa-cc-paypal","fa-3x", "mx-3"], ["fab","fa-cc-mastercard","fa-3x","mx-3"])
+  
