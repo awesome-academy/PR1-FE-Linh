@@ -1,0 +1,22 @@
+mixin renderFilledFormRow(label, content)
+  tr.row
+      td.col-2=label
+      td.col-10=content
+
+mixin renderFilledForms
+  table.table.w-50.mx-3.border-bottom
+    tbody
+      +renderFilledFormRow("Tên","Giang")
+      +renderFilledFormRow("Họ & tên đệm","Lê Anh")
+      +renderFilledFormRow("Công Ty","Cổ phần công nghệ DKT")
+      +renderFilledFormRow("Địa chỉ","Toà nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội")
+      +renderFilledFormRow("Thành phố","Hà Nội")
+      +renderFilledFormRow("Quốc tịch","Việt Nam")
+      +renderFilledFormRow("Postal/Zip Code","2300089")
+      +renderFilledFormRow("Phone","0934227382")
+      tr.row
+        td.col-12
+          a.w-100.text-info(href='') Chinh sua dia chi
+
+each num in [1, 2]
+  +renderFilledForms()

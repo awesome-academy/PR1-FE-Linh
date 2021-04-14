@@ -1,0 +1,30 @@
+mixin renderRow(inputID, text, t, holder)
+    .form-group.row.my-3
+      label.col-2.col-form-label(for=`${inputID}`)=text
+      .col-10
+        input(class=['form-control'] id=`${inputID}` type=`${t}` placeholder=`${holder}`)
+
+mixin renderUnfilledForm()
+    +renderRow('name', 'Tên', 'text', 'Giang')
+    +renderRow('surname', 'Họ và tên đệm', 'text', 'Lê Anh')
+    +renderRow('company', 'Công Ty', 'text', 'Cổ phần công nghệ DKT')
+    +renderRow('address', 'Địa chỉ', 'text', 'Toà nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội')
+    +renderRow('city', 'Thành phố', 'text', 'Hà Nội')
+    +renderRow('nationality', 'Quốc tịch', 'text', 'Việt Nam')
+    +renderRow('zipCode', 'Postal/Zip Code', 'number', '2300089')
+    +renderRow('name', 'Phone', 'number', '0934227382')
+    .form-check
+      input#inlineCheckbox2.form-check-input(type='checkbox' value='option2' checked='')
+      label.form-check-label.text-muted.ml-2(for='inlineCheckbox2') &Dstrok;&#x1EB7;t l&agrave;m &dstrok;&#x1ECB;a ch&#x1EC9; m&#x1EB7;c &dstrok;&#x1ECB;nh?
+    .form-group.d-flex.justify-content-center.my-3
+      button.btn-lg.btn-info.border-0.mx-2(type='button')
+          | Ch&#x1EC9;nh s&#x1EED;a &dstrok;&#x1ECB;a ch&#x1EC9;
+      button.btn-lg.btn-dark.border-0(type='reset') Xo&aacute;
+      
+.forms.d-flex.flex-row.justify-content-between
+  form.w-50.mr-4.border-bottom.unfilled-form
+    h2 &Dstrok;&#x1ECA;A CH&#x1EC8; C&#x1EE6;A B&#x1EA0;N
+    +renderUnfilledForm()
+  form.w-50.add-address-form
+    a.py-5 Th&ecirc;m &dstrok;&#x1ECB;a ch&#x1EC9;
+    +renderUnfilledForm()

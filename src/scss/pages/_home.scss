@@ -73,7 +73,7 @@
     h1 {
       font-family: 'utm_caviar', Arial, Helvetica, sans-serif;
       color: $color-font-utm;
-      padding:.5rem 1rem;
+      padding: 0.5rem 1rem;
     }
 
     td {
@@ -88,6 +88,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0.5rem 5rem;
   header {
     font-size: 2.1rem;
   }
@@ -145,6 +146,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   header {
     font-size: 2.1rem;
   }
@@ -204,7 +206,7 @@
     .customer-info {
       display: flex;
       flex-direction: column;
-  
+
       align-items: center;
       .customer-img-container {
         width: 8rem;
@@ -222,4 +224,5 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
