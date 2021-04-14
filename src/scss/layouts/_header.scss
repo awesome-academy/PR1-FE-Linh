@@ -1,7 +1,8 @@
 .customer-info {
-  @extend %flex-row-center;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  width: $content-width;
+  max-width: $content-width;
   margin: auto;
   li {
     margin-right: 1rem;
@@ -15,11 +16,10 @@
     }
   }
 }
-
 .web-header {
   display: flex;
   flex-direction: row;
-  background-color: #000000;
+  background-color: $color-black;
   .img-container {
     flex-grow: 1;
     text-align: center;
@@ -32,8 +32,15 @@
     justify-content: flex-start;
     padding: 0;
     li {
-      color: #fff;
-      margin-right: 4rem;
+      color: $color-white;
+      padding-right: 5rem;
+      a {
+        color: $color-white;
+        &:hover {
+          color: $color-font-utm;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
@@ -41,7 +48,7 @@
 // HOME HEADER
 
 .header__home {
-  color: white;
+  color: $color-white;
   height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,6 +66,7 @@
     }
 
     h1 {
+      // font-family: 'Times New Roman', Times, serif;
       font-family: 'utm_aquarelle', Arial, Helvetica, sans-serif;
       font-size: 16rem;
       display: inline;

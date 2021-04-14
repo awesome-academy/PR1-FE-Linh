@@ -5,7 +5,7 @@ const { src, dest, parallel, watch, series } = require('gulp'),
   browserSync = require('browser-sync').create();
 
 const FilesPath = {
-  sassFiles: 'src/scss/**/**/*',
+  sassFiles: 'src/scss/**/*',
   htmlAll: 'src/pug/**/**/*.pug',
   assetsFile: 'dist/assets/**',
 };
