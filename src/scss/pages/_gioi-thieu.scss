@@ -1,0 +1,24 @@
+.gioi-thieu-page {
+  max-width: $content-width;
+  margin: auto;
+  padding: 0.5rem 5rem;
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 0;
+  }
+  .img-container {
+    margin-right: 2rem;
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+  .detail {
+    width: 50%;
+    h1 {
+      margin-bottom: 2rem;
+    }
+  }
+}
