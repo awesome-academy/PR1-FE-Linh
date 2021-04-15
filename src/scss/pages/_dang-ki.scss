@@ -1,0 +1,15 @@
+.signup-page {
+  max-width: $content-width;
+  margin: auto;
+  padding: 0.5rem 5rem;
+  .signup-content {
+    position: relative;
+    .login-btn {
+      position: absolute;
+      font-size: 1.4rem;
+      padding: 1rem 2.5rem;
+      right: 0;
+      top: -7rem;
+    }
+  }
+}

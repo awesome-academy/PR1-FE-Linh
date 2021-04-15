@@ -1,0 +1,7 @@
+extends ../layouts/default-layout.pug
+block content
+    main.signup-page
+        include ../partials/commons/route.pug
+        +renderRoute(" Đăng kí", "ĐĂNG KÍ")
+        include ../partials/details/dang-ki/content.pug
+        include ../partials/details/don-hang/business-badge.pug
