@@ -1,0 +1,44 @@
+mixin renderListIcon(ulClass, liClass, ...iconClasses)
+  ul(class=ulClass)
+    each iconClass in iconClasses 
+      li(class=liClass)
+        a(href='')
+          i(class=iconClass)
+
+.lien-he-content
+    .thong-tin 
+        .img-container 
+            img(src="../assets/images/google-map.jpeg", alt="")
+        include ../../commons/form-row.pug
+        +renderRow('name', 'Your name', 'text')
+        +renderRow('name', 'Your Email', 'text')
+        +renderRow('name', 'Subject', 'text')
+        .form-group.row.my-3
+            label.col-2.col-form-label(for="message") Your message
+            .col-10
+                textarea(class=['form-control'] id="message")
+                button.btn-lg.btn-dark.border-0.send G&#x1EEC;I
+    .contact 
+        .img-container 
+            img(src="../assets/images/project-1_logo-white.jpg", alt="")
+        .detail 
+            ul.list-group.border-0
+                li.list-group-item.border-0.px-0
+                    section.d-flex.flex-row.align-items-center
+                        i.fas.fa-map-marker-alt
+                        div
+                            p.mx-2
+                            | T&#x1EA7;ng 4, To&agrave; nh&agrave; Hanoi Group S&#x1ED1; 442 &Dstrok;&#x1ED9;i C&#x1EA5;n
+                            p.mx-2 P. C&#x1ED1;ng V&#x1ECB; Q. Ba &Dstrok;&igrave;nh, H&agrave; N&#x1ED9;i
+                li.list-group-item.border-0.px-0
+                    .d-flex.flex-row
+                    section.d-flex.flex-row
+                        i.fas.fa-blender-phone
+                        p.mx-2 (04) 3786 8904
+                    section.d-flex.flex-row
+                        i.fas.fa-envelope
+                        p.mx-2.text-warning
+                        em Support@bitzweb.vn
+        .follow 
+            h3 FOLLOW US: 
+            +renderListIcon(["list-inline","border-0","d-inline"], ["list-inline-item","border-0","px-0"],["fab","fa-instagram","fa-lg"],["fab","fa-tiktok","fa-lg"],["fab","fa-youtube","fa-lg"],["fab","fa-twitter","fa-lg"],["fab","fa-facebook-f","fa-lg"])
