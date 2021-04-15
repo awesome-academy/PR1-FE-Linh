@@ -1,0 +1,28 @@
+mixin renderTH(content)
+  td(scope='row')=content
+
+mixin renderTR
+  tr
+    td(scope='row').img-cell
+      .img-container
+        img(src='../assets/images/Product/7.jpg' alt='')
+    td R&#x1AF;&#x1EE2;U VANG &Dstrok;&#x1ECE;
+    td.price 345.000d
+    td 1
+    td.total 345.000d
+    td
+      a(href="") 
+        i.far.fa-trash-alt.fa-lg
+
+.content
+  table.table.table-bordered
+    tbody
+      tr
+        each content in ["ẢNH","TÊN SẢN PHẨM","GIÁ","SỐ LƯỢNG","TỔNG SỐ", "XOÁ"]
+          +renderTH(content)
+      for num in [1,2,3,4]
+        +renderTR()
+  div.d-flex.justify-content-end.btn-gio-hang
+      button.btn-lg.btn-dark.border-0 TIẾP TỤC MUA HÀNG
+      button.btn-lg.btn-dark.border-0.mx-3 XOÁ
+      button.btn-lg.btn-dark.border-0 CẬP NHẬT
