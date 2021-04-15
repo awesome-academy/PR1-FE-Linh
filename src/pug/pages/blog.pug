@@ -1,0 +1,9 @@
+extends ../layouts/default-layout.pug
+block content
+    main.blog-page
+        include ../partials/commons/route.pug
+        +renderRoute(" Blog", "BLOG")
+        .blog-cards
+            include ../partials/commons/card.pug
+            +renderCards(1,2,3,4,5,6,7,8,9)
+        include ../partials/details/don-hang/business-badge.pug

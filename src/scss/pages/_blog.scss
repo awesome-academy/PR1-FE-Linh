@@ -1,0 +1,38 @@
+.blog-page {
+  max-width: $content-width;
+  margin: auto;
+  padding: 0.5rem 5rem;
+  .blog-cards {
+    align-content: center;
+    align-items: center;
+    display: grid;
+    gap: 1rem 1rem;
+    grid-template-columns: repeat(3, 30rem);
+    grid-template-rows: repeat(3, 40rem);
+    justify-content: space-between;
+    justify-items: center;
+    .card {
+      width: 30rem;
+      overflow: hidden;
+      border: none;
+      .card-title {
+        a {
+          cursor: pointer;
+          &:hover {
+          color: $color-font-utm
+          }
+        }
+      }
+      .card-img-container {
+        display: block;
+        width: 30rem;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        width: 29rem;
+      }
+    }
+  }
+}
