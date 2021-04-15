@@ -1,9 +1,4 @@
-mixin renderRow(inputID, text, t, holder)
-    .form-group.row.my-3
-      label.col-2.col-form-label(for=`${inputID}`)=text
-      .col-10
-        input(class=['form-control'] id=`${inputID}` type=`${t}` placeholder=`${holder}`)
-
+include ../../commons/form-row.pug
 mixin renderUnfilledForm()
     +renderRow('name', 'Tên', 'text', 'Giang')
     +renderRow('surname', 'Họ và tên đệm', 'text', 'Lê Anh')

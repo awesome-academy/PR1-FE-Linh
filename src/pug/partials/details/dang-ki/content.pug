@@ -1,0 +1,20 @@
+include ../../commons/form-row.pug
+
+div.signup-content
+  button.btn.btn-dark.border-0.login-btn ĐĂNG NHẬP
+  form.mt-5.border.p-5.w-100
+    h2 TH&Ocirc;NG TIN C&Aacute; NH&Acirc;N
+    +renderRow('name', 'Tên trước *', 'text')
+    +renderRow('surname', 'Tên sau *', 'text')
+    +renderRow('email', 'Email *', 'email')
+    +renderRow('password', 'Password*', 'password')
+    .form-check.row
+      .col-10.offset-2
+        input#nhanbantin.form-check-input.mr-5(type='checkbox')
+        label.form-check-label.text-muted.ml-3(for='nhanbantin') &Dstrok;&abreve;ng k&iacute; nh&#x1EAD;n b&#x1EA3;n tin
+    h2.mt-4 TH&Ocirc;NG TIN &Dstrok;&Abreve;NG NH&#x1EAC;P
+    +renderRow('password', 'Mật khẩu*', 'password')
+    +renderRow('password', 'Xác nhận mật khẩu*', 'password')
+    div.d-flex.justify-content-end
+      button.btn-lg.btn-dark.border-0.mx-3 G&#x1EEC;I
+      button.btn-lg.btn-dark.border-0 QUAY L&#x1EA0;I
