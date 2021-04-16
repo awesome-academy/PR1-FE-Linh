@@ -1,0 +1,14 @@
+include ../../commons/form-row.pug
+
+div.signin-content
+  button.btn.btn-dark.border-0.signup-btn ĐĂNG KÝ
+  form.mt-5.border.p-5.w-100
+    h2.mt-4 KHÁCH HÀNG &Dstrok;&Abreve;NG NH&#x1EAC;P
+    p.mb-5 Nếu bạn có một tài khoản, xin vui lòng đăng nhập
+    +renderRow('password', 'Mật khẩu*', 'password')
+    +renderRow('password', 'Xác nhận mật khẩu*', 'password')
+    div.signin-btn
+      .form-check
+        input#inlineCheckbox2.form-check-input(type='checkbox' value='option2')
+        label.form-check-label.text-muted.ml-2(for='inlineCheckbox2') Quên mật khẩu
+      button.btn-lg.btn-dark.border-0 QUAY L&#x1EA0;I

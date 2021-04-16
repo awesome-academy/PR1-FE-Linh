@@ -1,0 +1,7 @@
+extends ../layouts/default-layout.pug
+block content
+    main.signin-page
+        include ../partials/commons/route.pug
+        +renderRoute(" Đăng nhập", "ĐĂNG NHẬP")
+        include ../partials/details/dang-nhap/content.pug
+        include ../partials/details/don-hang/business-badge.pug

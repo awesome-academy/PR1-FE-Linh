@@ -1,16 +1,22 @@
-.signup-page {
+.signin-page {
   max-width: $content-width;
   margin: auto;
   padding: 0.5rem 5rem;
-  .signup-content {
+  .signin-content {
     position: relative;
-    .login-btn {
+    margin-bottom: 5rem;
+    .signup-btn {
       position: absolute;
       font-size: 1.4rem;
       padding: 1rem 2.5rem;
       right: 0;
       top: -7rem;
     }
+    .signin-btn {
+      margin: 1.3rem 14.5rem;
+      .form-check {
+        margin-bottom: 1.3rem;
+      }
+    }
   }
 }
-
