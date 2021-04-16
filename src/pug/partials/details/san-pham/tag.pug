@@ -1,0 +1,10 @@
+mixin renderTag(content)
+    a.btn.btn-outline-secondary(href='#' role='button')=content
+.so-sanh
+    include ../../commons/route.pug
+    +renderRoute("", "TAG SẢN PHẨM")
+    .tags 
+        a.btn.btn-warning.text-white(href='#' role='button') Đồng hồ
+        - const tags = ["Túi","Phụ kiện","Giày","Sandal","sơ mi","Nước hoa","Trẻ em","Thời trang nữ"]
+        each tag in tags 
+            +renderTag(tag)

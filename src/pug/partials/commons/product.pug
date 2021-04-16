@@ -1,8 +1,9 @@
-mixin renderProduct(s)
+mixin renderProduct(s, tag='')
   article.product
     section
-      .triangle
-        p Sale
+      if tag
+        .triangle
+          p=tag
       .product-img__container
         img(src=`../../../assets/images/Product/${s}.jpg` alt='wine bottle')
       .product-fav-comp

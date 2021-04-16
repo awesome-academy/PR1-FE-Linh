@@ -1,0 +1,10 @@
+mixin renderListItem(content)
+    li=content
+
+.danh-muc
+    include ../../commons/route.pug
+    +renderRoute("", "DANH MỤC SẢN PHẨM")
+    ul
+        - const itemlist =["RƯỢU NGOẠI","Rượu Chivas (26)","Hàng đôc - Rượu độc đáo (36)","Rượu Whisky (24)","Rượu Remy Martin (16)","Rượu Glemorangie (11)","Rượu Ballantine's (7)","Rượu Cognac (40)","Rượu Vodka (93)","Rượu Macallan (19)","Rượu Brandy (62)","Rượu Hennessy (20)","Rượu Gin - Tequila - Liquer - Rượu mui (36)","Rượu Champane (12)","Rượu Single malt Scotch whisky (47)","Rượu Spirits (4)","RƯỢU VANG","Rượu Vang Pháp (88)","Rượu Vang Úc (44)","Rượu Vang Mỹ (84)","Rượu Vang ChiLe (04)","Rượu Vang Phillip (43)","Rượu Vang Nam Phi (54)","Rượu Vang Ý (41)",]
+        each content in itemlist
+            +renderListItem(content)
