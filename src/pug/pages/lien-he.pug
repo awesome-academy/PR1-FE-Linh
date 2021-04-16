@@ -1,0 +1,8 @@
+extends ../layouts/default-layout.pug
+
+block content
+    main.lien-he-page
+        include ../partials/commons/route.pug
+        +renderRoute(" Địa chỉ", "LIÊN HỆ")
+        include ../partials/details/lien-he/content.pug
+        include ../partials/details/don-hang/business-badge.pug
