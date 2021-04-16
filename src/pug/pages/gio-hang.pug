@@ -1,0 +1,7 @@
+extends ../layouts/default-layout.pug
+block content
+    main.gio-hang-page
+        include ../partials/commons/route.pug
+        +renderRoute(" Sản phẩm / Giỏ Hàng", "GIỎ HÀNG")
+        include ../partials/details/gio-hang/content.pug
+        include ../partials/details/don-hang/business-badge.pug

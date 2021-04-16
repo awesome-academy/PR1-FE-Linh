@@ -1,0 +1,35 @@
+.gio-hang-page {
+  max-width: $content-width;
+  margin: auto;
+  padding: 0.5rem 5rem;
+  .content {
+    margin: 3rem 0;
+    table {
+      background-color: #fafafa;
+      font-size: 1.4rem;
+    }
+    .table td {
+      vertical-align: baseline;
+      text-align: center;
+
+      width: 20%;
+      .img-container {
+        width: 100%;
+
+        img {
+          width: 90%;
+        }
+      }
+    }
+
+    .price,
+    .total {
+      font-family: 'utm_caviar', Arial, Helvetica, sans-serif;
+      color: goldenrod;
+    }
+  }
+
+  .btn-gio-hang {
+    margin: 3rem 0;
+  }
+}
