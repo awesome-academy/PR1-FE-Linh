@@ -1,0 +1,7 @@
+extends ../layouts/default-layout.pug
+block content
+    main.gioi-thieu-page
+        include ../partials/commons/route.pug
+        +renderRoute(" Giới thiệu", "GIỚI THIỆU")
+        include ../partials/details/gioi-thieu/content.pug
+        include ../partials/details/don-hang/business-badge.pug
