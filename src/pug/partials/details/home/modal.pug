@@ -1,0 +1,16 @@
+#myModal.modal.fade
+    .modal-dialog
+        .modal-content
+        button.close(type='button' data-dismiss='modal') &times;
+        .modal-body
+            .img-container
+                img(src='../assets/images/pop-up.png' alt='pop-up')
+            .detail 
+                h1 Gửi Email
+                p Đăng ký Email ngay hôm nay để nhận được thông tin về các sự kiện, các chương trình giảm giá của chúng tôi sớm nhất 
+                .send-email.list-group-item.border-0.px-0
+                    input(type='text' placeholder="Email của bạn...")
+                    button.input-btn GỬI EMAIL
+                .form-check
+                    input#no-noti.form-check-input(type='checkbox' value='option2' checked='')
+                    label.form-check-label.text-muted.ml-2.no-noti-label(for='no-noti') Không hiển thị lại thông báo này
