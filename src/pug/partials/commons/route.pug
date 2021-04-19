@@ -6,6 +6,7 @@ mixin renderTitle(title)
 mixin renderRoute(route,title='')
     section
         .route.my-4
-            span Trang ch&#x1EE7; /
-            span=route
+            if route
+                span Trang ch&#x1EE7; /
+                span=route
         +renderTitle(title)

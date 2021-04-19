@@ -1,0 +1,14 @@
+extends ../layouts/default-layout.pug
+block content
+    main.list-san-pham-page
+        include ../partials/commons/route.pug
+        +renderRoute(" Sản phẩm / Rượu Vang Đỏ")
+        include ../partials/details/san-pham/landing-img.pug
+        .main 
+            include ../partials/details/san-pham/sidebar.pug
+            .grid-content
+                include ../partials/details/san-pham/grid_san-pham/nav.pug
+                include ../partials/details/san-pham/grid_san-pham/products.pug
+            
+        include ../partials/details/don-hang/business-badge.pug
+        
