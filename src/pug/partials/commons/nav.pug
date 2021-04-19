@@ -11,7 +11,7 @@ mixin renderDropdownContent(content)
 
 section.web-header
   .img-container
-    img(src='../assets/images/project-1_logo.jpg' alt='')
+    img(src='../assets/images/project-1_logo.jpg' alt='project logo')
   ul
     +renderHeaderContent("TRANG CHỦ")
     li
@@ -28,7 +28,7 @@ section.web-header
                   each content in ["Rượu Chivas","Hàng độc - Rượu độc đáo","Johnnie Walker","Rượu Whiskey","Rượu Remy Martin","Rượu Glenmorangie"]
                     +renderDropdownContent(content)
               .img-container
-                img(src='../assets/images/Home-gallery/3.jpg' alt='')
+                img(src='../assets/images/Home-gallery/3.jpg' alt='home gallery')
     +renderHeaderContent("RỰOU TRẮNG", "CHAMPAGNE",
     "THÔNG TIN", "BLOG",
     "LIÊN HỆ")

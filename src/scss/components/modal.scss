@@ -1,0 +1,61 @@
+@import '../base/variables';
+
+.modal-body {
+  background-color: $color-white;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 49rem;
+  min-height: 30rem;
+  padding-right: 3.5rem;
+
+  .img-container {
+    img {
+      width: 15rem;
+    }
+  }
+  .detail {
+    text-align: center;
+    width: 70%;
+    height: 100%;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+    p {
+      margin: 2rem 0;
+    }
+    .form-check {
+      margin: 1rem 0;
+      #no-noti {
+        margin-left: 3rem;
+      }
+      .no-noti-label {
+        margin-left: -8rem;
+      }
+    }
+  }
+  .send-email {
+    input[type='text'] {
+      width: 20rem;
+      height: 3.4rem;
+      padding-right: 5rem;
+      &::placeholder {
+        padding-left: 2rem;
+      }
+    }
+
+    .input-btn {
+      margin-left: -5.3rem;
+      margin-top: 0.1rem;
+      height: 3.5rem;
+      width: 10rem;
+      background: $color-font-utm;
+      color: $color-white;
+      border: 0;
+      -webkit-appearance: none;
+    }
+  }
+}

@@ -12,16 +12,16 @@
       font-size: 1.8rem;
     }
 
-    .send-email {
+    .send-email-footer {
       input[type='text'] {
-        width: 200px;
+        width: 15rem;
         height: 20px;
         padding-right: 50px;
       }
 
       input[type='submit'] {
         margin-left: -50px;
-        height: 25px;
+        height: 20px;
         width: 50px;
         background: $color-black;
         color: $color-white;
