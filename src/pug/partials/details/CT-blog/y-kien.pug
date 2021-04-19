@@ -1,0 +1,12 @@
+include ../../commons/form-row.pug
+
+form.w-100.y-kien
+    h4
+        em ĐÓNG GÓP Ý KIẾN
+    +renderRow('name', 'Tên *', 'text')
+    +renderRow('email', 'Email *', 'email')
+    .form-group.row.my-3
+        label.col-2.col-form-label(for="message") Ý kiến
+        .col-10
+            textarea(class=['form-control'] id="message")
+            button.btn-lg.border-0.send G&#x1EEC;I Ý KIẾN

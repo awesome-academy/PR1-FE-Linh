@@ -1,0 +1,16 @@
+
+extends ../layouts/default-layout.pug
+block content
+    main.CT-blog-page
+        include ../partials/commons/route.pug
+        +renderRoute(" Blog", "BLOG")
+        .content 
+            .sidebar
+                include ../partials/details/CT-blog/sidebar/moi-nhat.pug
+                include ../partials/details/CT-blog/sidebar/tag.pug
+                include ../partials/details/CT-blog/sidebar/latest-video.pug
+            .post
+                include ../partials/details/CT-blog/blog.pug
+                include ../partials/details/CT-blog/y-kien.pug
+                include ../partials/details/CT-blog/comment.pug
+        include ../partials/details/don-hang/business-badge.pug

@@ -1,0 +1,96 @@
+.CT-blog-page {
+  max-width: $content-width;
+  margin: auto;
+  padding: 0.5rem 5rem;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    .sidebar {
+      font-family: 'Roboto', sans-serif;
+      width: 24%;
+      margin-right: 2rem;
+      h4 {
+        margin-bottom: 0.8rem;
+      }
+      & > * {
+        margin: 2.5rem 0;
+      }
+      .tags {
+        .btn {
+          margin-right: 0.4rem;
+          margin-bottom: 0.4rem;
+          font-size: 1.2rem;
+        }
+      }
+      .moi-nhat {
+        .bai-viet {
+          display: flex;
+          flex-direction: row;
+          margin: 1.4rem 0;
+          .img-container {
+            width: 50%;
+            height: 8rem;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 1rem;
+            .date {
+              display: flex;
+              flex-direction: row;
+              color: #c1c1c1;
+              i {
+                margin-top: 0.3rem;
+                margin-right: 0.3rem;
+              }
+            }
+          }
+        }
+      }
+      .latest-video {
+        iframe {
+          max-width: 100%;
+        }
+      }
+    }
+    .post {
+      width: 74%;
+      & > * {
+        margin: 2.5rem 0;
+      }
+      .y-kien {
+        textarea {
+          height: 15rem;
+        }
+        button {
+          margin-top: 1rem;
+        }
+      }
+      .comment {
+        h4 {
+          margin-bottom: 1.2rem;
+        }
+        .space {
+          white-space: pre;
+        }
+      }
+      .blog {
+        .card {
+          border: none;
+          .card-body {
+            h5 {
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
