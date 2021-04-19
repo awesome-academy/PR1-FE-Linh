@@ -1,0 +1,12 @@
+mixin renderPages(pages)
+    for i in pages
+        li.list-inline-item=i
+.nav-san-pham 
+    .list-type
+        block list-type
+    ul.list-inline
+        li.list-inline-item.pre-page
+            i.fas.fa-caret-left
+        +renderPages([1,2,3,4,5])
+        li.list-inline-item 
+            i.fas.fa-caret-right
