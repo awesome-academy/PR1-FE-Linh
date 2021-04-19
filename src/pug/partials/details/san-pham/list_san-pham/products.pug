@@ -1,0 +1,28 @@
+
+mixin listProduct
+  article.product
+    .img__container
+        img(src='../assets/images/Product/14-cropped.jpg' alt='')
+    .price__detail
+      header.detail__header R&#x1AF;&#x1EE2;U NHO N&Abreve;M 1987
+      h1 333.000d
+      .interact-options
+        span
+            button.btn-lg.btn-dark ADD TO CART
+        span.produc-fav
+          span
+            i.fas.fa-heart
+          span Y&ecirc;u th&iacute;ch
+        span.produc-comp
+          span
+            i.far.fa-chart-bar
+          span So s&aacute;nh
+        
+      p
+        | M&#x1ED9;t h&#x1EE3;p ch&#x1EA5;t c&oacute; trong r&#x1B0;&#x1EE3;u vang &dstrok;&#x1B0;&#x1EE3;c g&#x1ECD;i l&agrave; resveratro c&oacute; kh&#x1EA3; n&abreve;ng
+        | l&agrave;m t&abreve;ng t&#x1ED1;i &dstrok;a tu&#x1ED5;i th&#x1ECD;. Resveratro c&ograve;n c&oacute; kh&#x1EA3; n&abreve;ng ng&abreve;n ch&#x1EB7;n m&#x1EAD;t
+        | &dstrok;&#x1ED9; &ocirc;xy ho&aacute; c&#x1EE7;a protein b&eacute;o
+
+.list-products
+  for i in [1,2,3,4]
+    +listProduct()
