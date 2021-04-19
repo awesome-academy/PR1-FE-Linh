@@ -1,0 +1,139 @@
+.CT-san-pham-page {
+  max-width: $content-width;
+  margin: auto;
+  padding: 0.5rem 5rem;
+  .introduction {
+    color: #818181;
+
+    .chon-san-pham {
+      display: flex;
+      flex-direction: row;
+      // ANH
+      .anh {
+        width: 53%;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid $color-light-gray;
+        .gallery {
+          border-right: 1px solid $color-light-gray;
+          width: 13%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          i {
+            margin: 2rem auto;
+          }
+          .item-img {
+            border-bottom: 1px solid $color-light-gray;
+          }
+          .no-border {
+            border: none;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .main-img {
+          width: 87%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      // LUA CHON
+      .lua-chon {
+        & > * {
+          margin-bottom: 2rem;
+        }
+        width: 45%;
+        .price {
+          font-family: 'utm_caviar', Arial, Helvetica, sans-serif;
+          color: $color-font-utm;
+          font-size: 2.4rem;
+        }
+
+        .review {
+          border-top: 1px solid $color-light-gray;
+          border-bottom: 1px solid $color-light-gray;
+          padding: 1rem 0;
+          span {
+            margin: 0 0.2rem;
+          }
+        }
+        .mau-sac {
+          i {
+            margin-right: 0.5rem;
+          }
+        }
+        .so-luong {
+          .amount {
+            background-color: $color-light-gray;
+            color: $color-black;
+            font-size: 2rem;
+            font-weight: 500;
+            padding: 0 1rem;
+            width: fit-content;
+            margin-right: 1rem;
+            form {
+              display: inline-block;
+
+              input {
+                width: 3rem;
+                border: none;
+                padding-left: 0.6rem;
+              }
+            }
+          }
+          .product-fav-comp-email {
+            span {
+              margin-right: 0.5rem;
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+    // CHI TIET
+    .chi-tiet {
+      display: flex;
+      flex-direction: row;
+      margin: 3rem auto;
+      .thong-tin {
+        width: 65%;
+        .nav {
+          margin-bottom: 0.51rem;
+          span {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            padding: 0.5rem;
+            &:hover {
+              background-color: $color-font-utm;
+              color: $color-white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .img-bg {
+        align-items: center;
+        background-image: url(../images/Home-gallery/3.jpg);
+        background-size: cover;
+        color: white;
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        height: 15rem;
+        justify-content: center;
+        margin: auto;
+        margin-left: 3rem;
+        width: 35%;
+      }
+    }
+  }
+  .relevant {
+    .triangle {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+extends ../layouts/default-layout.pug
+block content
+    main.CT-san-pham-page
+        include ../partials/commons/route.pug
+        +renderRoute(" Sản phẩm / Rượu vang đỏ")
+        .introduction
+            .chon-san-pham
+                include ../partials/details/CT-san-pham/anh.pug
+                include ../partials/details/CT-san-pham/lua-chon.pug
+            include ../partials/details/CT-san-pham/chi-tiet.pug
+        .relevant
+            include ../partials/details/home/new-product.pug
+        include ../partials/details/don-hang/business-badge.pug
