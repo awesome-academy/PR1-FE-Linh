@@ -43,16 +43,16 @@
   .sale-item {
     display: flex;
     flex-direction: row;
-    margin: 0 10rem;
+    margin: 0 8rem;
     div {
       object-fit: contain;
     }
     .sale__container {
-      width: 10rem;
+      width: 7rem;
     }
 
     .wine__container {
-      width: 17rem;
+      width: 29rem;
     }
     img,
     svg {
@@ -224,5 +224,50 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
 
+@media screen and (max-width: $layout-breakpoint-small) {
+  .customer-new-blog__container {
+    flex-direction: column;
+    .home-cards {
+      flex-wrap: wrap;
+      .card {
+        margin: auto;
+        margin-top: 0;
+      }
+    }
+  }
+  .new-product {
+    .products {
+      flex-wrap: wrap;
+    }
+  }
+  .popular-item_layer_container {
+    max-width: 30rem !important;
+  }
+  .popular-item {
+    margin-top: -40rem;
+    width: 25rem;
+    padding-left: 0;
+    .sale-item {
+      margin: 5rem 0;
+      max-width: 50%;
+      .sale__container {
+        display: none;
+      }
+
+      .wine__container {
+        width: 13rem;
+      }
+    }
+
+    .sale__detail {
+      margin: 0;
+      max-width: 50%;
+    }
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(4, 12.5rem);
+  }
 }

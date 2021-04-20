@@ -36,9 +36,11 @@ p {
   font-size: 1.2rem;
 }
 
-a {
-  text-decoration: none;
-  color: $color-black;
+li {
+  a {
+    text-decoration: none;
+    color: $color-black;
+  }
 }
 
 li {

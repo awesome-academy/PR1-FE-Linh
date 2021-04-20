@@ -18,11 +18,15 @@
     }
   }
 }
+.navbar {
+  margin-bottom: 0 !important;
+}
 .web-header {
   display: flex;
   flex-direction: row;
   background-color: $color-black;
   height: 15rem;
+  margin-bottom: 0;
   .img-container {
     text-align: center;
     padding: 1rem 4rem;
@@ -73,16 +77,22 @@
 @media screen and (max-width: $layout-breakpoint-small) {
   .web-header {
     height: fit-content;
+
     ul {
       background-color: black;
       display: flex;
       flex-direction: column;
-      height: 35rem;
       width: 100%;
       justify-content: space-between;
+      li {
+        margin: 2rem;
+      }
+      a {
+        color: $color-white;
+      }
     }
     .navbar-toggler {
-      background-color: white;
+      background-color: white !important;
     }
   }
 }
