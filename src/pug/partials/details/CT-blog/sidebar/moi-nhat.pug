@@ -1,0 +1,14 @@
+mixin renderPost
+    .bai-viet 
+        .img-container
+            img(src="https://source.unsplash.com/random", alt="unsplash photo")
+        .content 
+            h5 CÁCH SẮP XẾP NỘI THẤT TRONG NHÀ
+            .date 
+                i.far.fa-calendar-minus
+                p 12/07/2013
+.moi-nhat 
+    h4 BÀI VIẾT MỚI NHẤT
+    each i in [1,2,3]
+        +renderPost()
+    

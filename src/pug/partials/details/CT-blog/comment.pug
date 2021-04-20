@@ -1,0 +1,31 @@
+mixin renderComment 
+    .card.border-light.w-100
+        .card-header.d-flex.flex-row.justify-content-between
+            em.space Bình luận bởi Google      |   Cách đây 4 giờ
+            em.text-decoration-underline Trả lời
+        .card-body
+            p.card-text
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, ullam officia nesciunt vero repudiandae, eveniet dolore delectus reprehenderit ut cumque amet voluptas! Odit ut expedita molestias iusto incidunt similique laborum numquam doloremque illum fuga!
+
+.comment 
+    h4 BÌNH LUẬN (3)
+    each i in [1,2,3]
+        +renderComment()
+    
+    nav(aria-label='Page navigation example')
+        ul.pagination.justify-content-end
+            li.page-item
+                a.page-link(href='#' aria-label='Previous')
+                    span(aria-hidden='true') &laquo;
+                    span.sr-only Previous
+            li.page-item
+                a.page-link(href='#') 1
+            li.page-item
+                a.page-link(href='#') 2
+            li.page-item
+                a.page-link(href='#') 3
+            li.page-item
+                a.page-link(href='#' aria-label='Next')
+                    span(aria-hidden='true') &raquo;
+                    span.sr-only Next
+    
