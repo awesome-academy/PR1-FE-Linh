@@ -5,7 +5,7 @@
   border: none;
   cursor: pointer;
   a:hover {
-    color: $color-font-utm    ;
+    color: $color-font-utm;
   }
 }
 
@@ -28,7 +28,7 @@
   border: 1px solid #e6af48;
   display: none;
   font-size: 1.4rem;
-  left: -20rem;
+  left: -18rem;
   padding: 2rem;
   position: absolute;
   top: 8.6rem;
@@ -60,5 +60,15 @@
 .dropdown:hover {
   .dropdown-content {
     display: flex;
+  }
+}
+@media screen and (max-width: $layout-breakpoint-small) {
+  .dropdown:hover {
+    .dropdown-content {
+      font-size: 0.8rem;
+      width: 30rem;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }

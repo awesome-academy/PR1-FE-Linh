@@ -1,24 +1,44 @@
 .address-page {
-    max-width: $content-width;
-    margin: auto;
-    padding: .5rem 5rem;
-    a {
-      text-decoration: underline;
-    }
-    table {
-      td {
-        border: 0;
-      }
-    }
-    
-    .forms {
-      margin-top: 2rem;
-    }
-    .unfilled-form {
-      margin-right: 5rem;
-    }
-    .add-address-form {
-      margin-top:1rem;
+  max-width: $content-width;
+  margin: auto;
+  padding: 0.5rem 5rem;
+  a {
+    text-decoration: underline;
+  }
+  table {
+    td {
+      border: 0;
     }
   }
-  
+
+  .forms {
+    margin-top: 2rem;
+  }
+  .unfilled-form {
+    margin-right: 5rem;
+  }
+  .add-address-form {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  .address-page {
+    .forms {
+      .buttons {
+        display: flex;
+        flex-direction: column;
+
+        button {
+          width: 75%;
+          margin: auto !important;
+        }
+      }
+    }
+    // .table {
+    //   .widen {
+    //     margin-right: 1rem;
+    //   }
+    // }
+  }
+}

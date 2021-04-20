@@ -2,8 +2,7 @@
 
 @font-face {
   font-family: 'utm_aquarelle';
-  src: url('../fonts/utm_aquarelle/utm_aquarelle-webfont.woff2')
-      format('woff2'),
+  src: url('../fonts/utm_aquarelle/utm_aquarelle-webfont.woff2') format('woff2'),
     url('../fonts/utm_aquarelle/utm_aquarelle-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -44,4 +43,16 @@ a {
 
 li {
   list-style-type: none;
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  html {
+    font-size: 100%;
+  }
+  .form-group {
+    display: block;
+    label {
+      width: 100%;
+    }
+  }
 }

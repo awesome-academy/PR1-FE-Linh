@@ -1,7 +1,7 @@
 .donhang-page {
   width: $content-width;
   margin: auto;
-  padding: .5rem 5rem;
+  padding: 0.5rem 5rem;
 }
 
 .ds-donhang__container {
@@ -14,7 +14,7 @@
 }
 .DS__business-badge {
   max-width: $content-width;
-  margin:auto;
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,6 +22,18 @@
     width: 33.33%;
     img {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  .donhang-page {
+    max-width: 40rem;
+    section {
+      flex-direction: column !important;
+      table {
+        max-width: 100%;
+      }
     }
   }
 }
