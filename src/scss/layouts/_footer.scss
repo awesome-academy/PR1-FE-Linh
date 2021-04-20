@@ -1,7 +1,7 @@
 .footer {
   max-width: $content-width;
   margin: auto;
-  padding: .5rem 5rem;
+  padding: 0.5rem 5rem;
   .card-title {
     margin-bottom: 1rem;
   }
@@ -14,7 +14,7 @@
 
     .send-email-footer {
       input[type='text'] {
-        width: 15rem;
+        width: 13rem;
         height: 20px;
         padding-right: 50px;
       }
@@ -34,6 +34,17 @@
   .footer__lien-he {
     i {
       margin-top: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  .footer__content {
+    flex-wrap: wrap;
+    .card {
+      width: 17rem;
+      margin: auto;
+      margin-top: 0;
     }
   }
 }

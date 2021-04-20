@@ -20,3 +20,14 @@
     }
   }
 }
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  .signin-btn {
+    .form-check {
+      width: 10rem;
+    }
+    button {
+      width: 10rem;
+    }
+  }
+}
