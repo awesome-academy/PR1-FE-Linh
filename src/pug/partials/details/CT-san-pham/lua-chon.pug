@@ -1,0 +1,57 @@
+.lua-chon
+    include ../../commons/route.pug
+    +renderRoute("", "RƯỢU NHO NĂM 1987")
+    p.price 370.000d
+    .review 
+        span.star 
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star-half-alt
+            i.far.fa-star
+        span 1 Review(S) 
+        span |
+        span Add your review
+    .mau-sac
+        h3 MÀU SẮC
+        i.fas.fa-square.fa-3x.text-warning
+        i.fas.fa-square.fa-3x.text-black
+        i.fas.fa-square.fa-3x.text-danger
+    .kich-co 
+        h3 KÍCH CỠ
+        .dropdown
+            a#dropdownMenuLink.btn.btn-outline-dark.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                | Loại to
+            ul.dropdown-menu(aria-labelledby='dropdownMenuLink')
+                li
+                a.dropdown-item(href='#') Action
+                li
+                a.dropdown-item(href='#') Another action
+                li
+                a.dropdown-item(href='#') Something else here
+
+    .so-luong
+        h3 SỐ LƯỢNG
+        .inline
+            span.amount 
+                span -               
+                form(action='')
+                    input(type='text' name='amount' value='3')
+                span +
+            button.btn-lg.btn-dark ADD TO CART
+        .product-fav-comp-email
+            span.produc-fav
+                span
+                    i.fas.fa-heart
+                span Y&ecirc;u th&iacute;ch
+            span.produc-fav
+                span
+                    i.far.fa-chart-bar
+                span So s&aacute;nh
+            span.produc-fav
+                span
+                    i.fas.fa-envelope
+                span Email
+    .kich-co 
+        h3 MÔ TẢ
+        p Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hoá của protein béo.

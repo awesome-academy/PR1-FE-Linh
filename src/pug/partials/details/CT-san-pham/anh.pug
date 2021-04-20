@@ -1,0 +1,11 @@
+mixin renderImg(s)
+    .item-img
+        img(src=`../../../assets/images/Product/${s}.jpg` alt='wine bottle')
+.anh
+    .gallery 
+        i.fas.fa-arrow-up.fa-lg.text-warning
+        each i in [14,13,12,11,10]
+            +renderImg(i)
+        i.fas.fa-arrow-down.fa-lg.text-warning
+    .main-img 
+        img(src='../../assets/images/Product/13.jpg' alt='badge retrobrand')

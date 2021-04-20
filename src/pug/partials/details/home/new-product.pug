@@ -1,5 +1,5 @@
 include ../../commons/product.pug
-mixin newProduct
+mixin newProduct(kind)
   each s in [3,4,5,6]
     +renderProduct(s, 'Mới')
 .new-product
