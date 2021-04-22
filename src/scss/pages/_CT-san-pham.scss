@@ -137,3 +137,31 @@
     }
   }
 }
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  .CT-san-pham-page {
+    .introduction {
+      .chon-san-pham {
+        margin: 0 auto;
+        flex-direction: column;
+        .anh,
+        .lua-chon {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .chi-tiet {
+        flex-direction: column;
+
+        justify-content: center;
+        .thong-tin {
+          width: 100%;
+        }
+        .img-bg {
+          width: 50%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

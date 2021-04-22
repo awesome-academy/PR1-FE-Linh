@@ -5,11 +5,11 @@ mixin renderHeaderContent(...contents)
 header.header
   section.customer-info
     ul.d-flex.flex-row.justify-content-lg-start
-      +renderHeaderContent("Tài khoản của tôi", "-","Tài khoản của tôi", "-",
-      "Trạng thái đơn hàng", "-",
-      "Danh sách ưa thích", "-",
-      "Giỏ hàng", "-",
-      "Đăng nhập", "-",
+      +renderHeaderContent("Tài khoản của tôi", "Tài khoản của tôi", 
+      "Trạng thái đơn hàng", 
+      "Danh sách ưa thích", 
+      "Giỏ hàng", 
+      "Đăng nhập", 
       "Đăng kí")
     .search
       input.border-0(type='text' placeholder='Tìm kiếm ở đây...')

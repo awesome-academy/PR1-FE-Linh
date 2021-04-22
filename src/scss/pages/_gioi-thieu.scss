@@ -22,3 +22,18 @@
     }
   }
 }
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  .gioi-thieu-page {
+    .content {
+      flex-direction: column;
+      .img-container {
+        width: 100%;
+      }
+      .detail {
+        margin-top: 3rem;
+        width: 100%;
+      }
+    }
+  }
+}

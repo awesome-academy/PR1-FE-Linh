@@ -29,10 +29,32 @@
 @media screen and (max-width: $layout-breakpoint-small) {
   .donhang-page {
     max-width: 40rem;
+    padding: 0;
     section {
       flex-direction: column !important;
       table {
         max-width: 100%;
+        td {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-xs) {
+  .donhang-page {
+    max-width: 26rem;
+
+    section {
+      flex-direction: column !important;
+      table {
+        td {
+          font-size: 0.6rem;
+        }
+        th {
+          font-size: 0.7rem;
+        }
       }
     }
   }

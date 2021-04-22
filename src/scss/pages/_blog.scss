@@ -12,27 +12,49 @@
     justify-content: space-between;
     justify-items: center;
     .card {
-      width: 30rem;
+      width: 100%;
       overflow: hidden;
       border: none;
       .card-title {
         a {
           cursor: pointer;
           &:hover {
-          color: $color-font-utm
+            color: $color-font-utm;
           }
         }
       }
       .card-img-container {
         display: block;
-        width: 30rem;
+        width: 100%;
         img {
           width: 100%;
         }
       }
       p {
-        width: 29rem;
+        width: 100%;
       }
+    }
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  .blog-page {
+    max-width: $content-width;
+    margin: auto;
+    padding: 0.5rem 5rem;
+    .blog-cards {
+      grid-template-columns: repeat(2, 22rem);
+      grid-template-rows: repeat(4, 40rem);
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-xs) {
+  .blog-page {
+    .blog-cards {
+      grid-template-columns: repeat(1, 30rem);
+      grid-template-rows: repeat(9, 40rem);
     }
   }
 }

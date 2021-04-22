@@ -13,6 +13,8 @@
     border: 1px solid $color-black;
     width: fit-content;
     height: fit-content;
+    display: inline-block;
+    white-space: nowrap;
     input::placeholder {
       font-style: italic;
     }
@@ -41,6 +43,7 @@
     flex-grow: 4;
     justify-content: flex-start;
     padding: 0;
+    padding-top: 1rem;
     li {
       color: $color-white;
       padding-right: 5rem;
@@ -53,9 +56,14 @@
       }
     }
   }
+  .navbar-toggler {
+    background-color: white !important;
+    margin-right: 3rem;
+    width: 3rem;
+  }
 }
 
-@media screen and (max-width: 981px) {
+@media screen and (max-width: $layout-breakpoint-small) {
   .customer-info {
     flex-direction: column;
     width: 100%;
@@ -68,13 +76,6 @@
       margin: auto;
     }
   }
-}
-.web-header {
-  ul {
-    padding-top: 1rem;
-  }
-}
-@media screen and (max-width: $layout-breakpoint-small) {
   .web-header {
     height: fit-content;
 
@@ -84,26 +85,21 @@
       flex-direction: column;
       width: 100%;
       justify-content: space-between;
+      padding-right: 0.5rem;
       li {
-        margin: 2rem;
+        margin: 0;
+        padding: 0;
+        > * {
+          font-size: 0.7rem;
+        }
       }
       a {
         color: $color-white;
       }
     }
-    .navbar-toggler {
-      background-color: white !important;
-    }
   }
 }
-@media screen and (max-width: $layout-breakpoint-small) {
-  .web-header {
-    height: fit-content;
-    ul {
-      flex-wrap: wrap;
-    }
-  }
-}
+
 // HOME HEADER
 
 .header__home {
@@ -125,7 +121,6 @@
     }
 
     h1 {
-      // font-family: 'Times New Roman', Times, serif;
       font-family: 'utm_aquarelle', Arial, Helvetica, sans-serif;
       font-size: 16rem;
       display: inline;
@@ -143,5 +138,19 @@
       font-family: 'Lobster', cursive;
       display: inline;
     }
+  }
+}
+@media screen and (max-width: $layout-breakpoint-small) {
+  .header__home {
+    height: 20rem;
+    .customer-info {
+      ul {
+        height: 16rem;
+        justify-content: space-between!important;
+      }
+    }
+  }
+  .home__title {
+    display: none;
   }
 }

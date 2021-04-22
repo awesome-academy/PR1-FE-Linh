@@ -33,3 +33,22 @@
     margin: 3rem 0;
   }
 }
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  .gio-hang-page {
+    .content {
+      max-width: 100%;
+      margin: auto;
+      table {
+        font-size: 0.8rem;
+      }
+      .btn-gio-hang {
+        flex-direction: column;
+        button {
+          width: 75%;
+          margin: .5rem auto !important;
+        }
+      }
+    }
+  }
+}

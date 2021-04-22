@@ -31,14 +31,19 @@
 
         button {
           width: 75%;
-          margin: auto !important;
+          margin: 0.2rem auto !important;
         }
       }
     }
-    // .table {
-    //   .widen {
-    //     margin-right: 1rem;
-    //   }
-    // }
+    #filled-table {
+      width: 100% !important;
+      tbody {
+        tr {
+          .col-2, .col-10 {
+            width: 50%;
+          }
+        }
+      }
+    }
   }
 }
