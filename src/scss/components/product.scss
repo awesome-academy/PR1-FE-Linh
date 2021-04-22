@@ -1,6 +1,6 @@
 @import '../base/variables';
 .product {
-  width: 20%;
+  width: 30rem;
   display: relative;
 
   .product-fav-comp {
@@ -36,7 +36,7 @@
       width: 9rem;
       text-align: center;
       color: $color-white;
-      border-bottom: 1px solid $color-font-utm;
+ 
       padding: 1rem;
       padding-bottom: 0.5rem;
       margin-top: -5.2rem;
