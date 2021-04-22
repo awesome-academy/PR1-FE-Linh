@@ -155,3 +155,43 @@
     }
   }
 }
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  .cac-san-pham-page {
+    .sidebar {
+      width: 50%;
+    }
+    .grid-products {
+      grid-template-columns: repeat(1, 18rem);
+      grid-template-rows: repeat(9, 40rem);
+      justify-content: center;
+    }
+    .list-products {
+      margin-left: 2rem;
+      .product {
+        flex-direction: column;
+        .img__container {
+          width: 50%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-xs) {
+  .cac-san-pham-page {
+    .main {
+      display: flex;
+      flex-direction: column;
+
+      .content {
+        width: 100%;
+        margin-top: 2rem;
+      }
+      .sidebar {
+        width: 100%;
+      }
+    }
+  }
+}

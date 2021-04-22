@@ -34,3 +34,18 @@
     }
   }
 }
+@media screen and (max-width: $layout-breakpoint-small) {
+  .lien-he-page {
+    .lien-he-content {
+      flex-direction: column;
+      .thong-tin {
+        width: 100%;
+      }
+      .contact {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 3rem;
+      }
+    }
+  }
+}

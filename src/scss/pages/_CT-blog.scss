@@ -17,6 +17,7 @@
         margin: 2.5rem 0;
       }
       .tags {
+        width: 100%;
         .btn {
           margin-right: 0.4rem;
           margin-bottom: 0.4rem;
@@ -24,6 +25,7 @@
         }
       }
       .moi-nhat {
+        width: 100%;
         .bai-viet {
           display: flex;
           flex-direction: row;
@@ -55,6 +57,7 @@
         }
       }
       .latest-video {
+        width: 100%;
         iframe {
           max-width: 100%;
         }
@@ -87,6 +90,31 @@
           .card-body {
             h5 {
               font-size: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  .CT-blog-page {
+    .content {
+      flex-direction: column-reverse;
+      .post {
+        margin: auto;
+      }
+      .sidebar {
+        width: 100%;
+        .moi-nhat {
+          .cac-bai-viet {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            flex-wrap: wrap;
+            .bai-viet {
+              width: 20rem;
             }
           }
         }
